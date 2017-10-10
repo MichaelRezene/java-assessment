@@ -8,10 +8,12 @@ public class Person implements Greeter {
     }
 
     public String getFirstName() {
+
         return firstName;
     }
 
     public void setFirstName(String firstName) {
+
         this.firstName = firstName;
     }
 
@@ -25,7 +27,11 @@ public class Person implements Greeter {
 
 
     @Override
-    public String sayHello() {
-        return null;
+    public  String sayHello() {
+        Person p = new Person(firstName,lastName);
+             p.setFirstName("Genesis");
+            p.setLastName("Mehert");
+          return firstName + lastName;
+
     }
 }
